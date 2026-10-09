@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Spam Detector</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>AI Spam Detector</h1>
+        <p class="subtitle">Check whether a message looks like spam or not.</p>
+
+        <textarea
+          id="messageInput"
+          rows="6"
+          placeholder="Type a message here..."
+        ></textarea>
+
+        <div class="actions">
+          <button id="checkBtn">Check message</button>
+          <button id="clearBtn" class="secondary">Clear</button>
+        </div>
+
+        <div id="result" class="result neutral">
+          <span class="result-label">Prediction</span>
+          <strong id="resultText">Waiting for a message...</strong>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
